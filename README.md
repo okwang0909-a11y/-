@@ -1,43 +1,47 @@
-<!-- TOP GRAPH CARD -->
-<div class="absolute right-[160px] top-[60px] w-[440px] h-[300px] rounded-[34px] bg-white border border-[#e8edf2] panel-shadow overflow-hidden">
+<!-- top chart card -->
+<div class="absolute right-[170px] top-[80px] w-[440px] h-[310px] bg-white rounded-[34px] border border-[#e8edf2] card-shadow overflow-hidden">
 
-  <div class="flex items-center justify-between px-10 pt-8">
+  <div class="px-10 pt-8 flex items-center justify-between">
 
     <div class="text-[28px] font-semibold text-[#1e1e1e]">
       Weekly Stats
     </div>
 
-    <div class="text-[40px] leading-none">
+    <div class="text-[40px] leading-none -mt-3">
       ···
     </div>
 
   </div>
 
-  <!-- graph area -->
+  <!-- graph -->
   <div class="relative px-8 mt-6">
 
-    <!-- horizontal lines -->
-    <div class="absolute left-8 right-8 top-3 space-y-10 opacity-70">
-      <div class="border-t border-[#dfe5ea]"></div>
-      <div class="border-t border-[#dfe5ea]"></div>
-      <div class="border-t border-[#dfe5ea]"></div>
-      <div class="border-t border-[#dfe5ea]"></div>
+    <!-- grid -->
+    <div class="absolute inset-0 top-[10px] px-8">
+      <div class="space-y-10 opacity-70">
+        <div class="border-t border-[#dfe5ea]"></div>
+        <div class="border-t border-[#dfe5ea]"></div>
+        <div class="border-t border-[#dfe5ea]"></div>
+        <div class="border-t border-[#dfe5ea]"></div>
+      </div>
     </div>
 
     <svg width="370" height="140" viewBox="0 0 370 140" class="relative z-10">
 
+      <!-- green line -->
       <path
         d="M0 85
-           C30 95, 45 40, 80 55
-           C115 70, 140 5, 180 20
-           C220 35, 245 120, 290 85
-           C320 60, 335 -10, 370 15"
+           C30 95, 40 40, 80 55
+           C120 70, 130 5, 180 20
+           C220 35, 240 120, 290 85
+           C320 60, 330 -10, 370 15"
         fill="none"
-        stroke="#7CC8B5"
+        stroke="#7BC7B3"
         stroke-width="6"
         stroke-linecap="round"
       />
 
+      <!-- purple line -->
       <path
         d="M0 120
            C20 125, 40 70, 70 95
@@ -69,7 +73,7 @@
   <div class="flex gap-10 px-14 mt-6 text-[18px]">
 
     <div class="flex items-center gap-3 text-[#616a74]">
-      <div class="w-4 h-4 rounded-full bg-[#7CC8B5]"></div>
+      <div class="w-4 h-4 rounded-full bg-[#7BC7B3]"></div>
       Events
     </div>
 
@@ -82,38 +86,40 @@
 
 </div>
 
-<!-- FLOATING SHOP ICON -->
-<div class="absolute right-[110px] top-[230px] w-[110px] h-[110px] rounded-[28px] bg-white panel-shadow flex items-center justify-center">
+<!-- cart floating -->
+<div class="absolute right-[110px] top-[250px] w-[108px] h-[108px] bg-white rounded-[28px] soft-shadow flex items-center justify-center">
 
   <svg width="52" height="52" viewBox="0 0 24 24" fill="none">
-    <path d="M4 5H6L8.2 14.5C8.4 15.3 9.1 16 10 16H18C18.8 16 19.5 15.4 19.7 14.6L21 8H7"
+    <path d="M4 5H6L8.3 14.5C8.5 15.3 9.2 16 10 16H18C18.8 16 19.5 15.4 19.7 14.6L21 8H7"
       stroke="#111"
       stroke-width="1.8"
       stroke-linecap="round"
       stroke-linejoin="round"/>
-    <circle cx="10" cy="20" r="1.8" fill="#111"/>
-    <circle cx="18" cy="20" r="1.8" fill="#111"/>
+    <circle cx="10" cy="20" r="1.7" fill="#111"/>
+    <circle cx="18" cy="20" r="1.7" fill="#111"/>
   </svg>
 
 </div>
 
-<!-- BOTTOM ANALYTICS PANEL -->
-<div class="absolute left-[300px] bottom-[60px] w-[740px] h-[390px] rounded-[36px] bg-white border border-[#e7ecf0] panel-shadow overflow-hidden">
+<!-- bottom analytics card -->
+<div class="absolute left-[310px] bottom-[70px] w-[730px] h-[390px] bg-white rounded-[36px] border border-[#e6ebef] card-shadow overflow-hidden">
 
-  <div class="flex items-center justify-between px-12 pt-10">
+  <div class="absolute left-0 top-0 bottom-0 w-[1px] bg-[#edf1f4]"></div>
+
+  <div class="px-12 pt-10 flex items-center justify-between">
 
     <div class="text-[28px] font-semibold text-[#1e1e1e]">
       Activity
     </div>
 
-    <div class="text-[40px] leading-none">
+    <div class="text-[40px] leading-none -mt-3">
       ···
     </div>
 
   </div>
 
-  <!-- DONUT -->
-  <div class="absolute left-[55px] top-[120px]">
+  <!-- donut -->
+  <div class="absolute left-[60px] top-[120px]">
 
     <div class="text-[20px] font-medium text-[#444] mb-5">
       Budget Scord
@@ -121,19 +127,17 @@
 
     <div class="flex items-center gap-10">
 
-      <div
-        class="relative w-[180px] h-[180px] rounded-full"
-        style="
-          background:
-          conic-gradient(
-          #8CB8EA 0 22%,
-          #7CC4C8 22% 38%,
-          #72D2AE 38% 58%,
-          #8A7CE5 58% 73%,
-          #6BC9B0 73% 88%,
-          #7DB6D0 88% 100%);
-        "
-      >
+      <div class="relative w-[180px] h-[180px] rounded-full"
+           style="
+           background:
+           conic-gradient(
+           #88B7E8 0 22%,
+           #7CC4C9 22% 38%,
+           #72D2AE 38% 58%,
+           #8A7BE6 58% 73%,
+           #6BC9B0 73% 88%,
+           #79B6CF 88% 100%);
+           ">
 
         <div class="absolute inset-[34px] bg-white rounded-full"></div>
 
@@ -143,17 +147,17 @@
       <div class="space-y-4 text-[18px] text-[#505b66]">
 
         <div class="flex items-center gap-3">
-          <div class="w-4 h-4 rounded-full bg-[#8CB8EA]"></div>
+          <div class="w-4 h-4 rounded-full bg-[#88B7E8]"></div>
           Fead
         </div>
 
         <div class="flex items-center gap-3">
-          <div class="w-4 h-4 rounded-full bg-[#7CC4C8]"></div>
+          <div class="w-4 h-4 rounded-full bg-[#7CC4C9]"></div>
           Transport
         </div>
 
         <div class="flex items-center gap-3">
-          <div class="w-4 h-4 rounded-full bg-[#8A7CE5]"></div>
+          <div class="w-4 h-4 rounded-full bg-[#8A7BE6]"></div>
           Ranchland
         </div>
 
@@ -163,7 +167,7 @@
         </div>
 
         <div class="flex items-center gap-3">
-          <div class="w-4 h-4 rounded-full bg-[#7DB6D0]"></div>
+          <div class="w-4 h-4 rounded-full bg-[#79B6CF]"></div>
           AutoFront
         </div>
 
@@ -173,29 +177,29 @@
 
   </div>
 
-  <!-- bars -->
-  <div class="absolute right-[55px] top-[130px] w-[320px]">
+  <!-- activity bars -->
+  <div class="absolute right-[55px] top-[135px] w-[320px]">
 
     <div class="relative h-[180px] flex items-end justify-between">
 
       <!-- grid -->
       <div class="absolute inset-0 flex justify-between">
-        <div class="w-[1px] bg-[#e7ebef] h-full"></div>
-        <div class="w-[1px] bg-[#e7ebef] h-full"></div>
-        <div class="w-[1px] bg-[#e7ebef] h-full"></div>
-        <div class="w-[1px] bg-[#e7ebef] h-full"></div>
-        <div class="w-[1px] bg-[#e7ebef] h-full"></div>
-        <div class="w-[1px] bg-[#e7ebef] h-full"></div>
-        <div class="w-[1px] bg-[#e7ebef] h-full"></div>
+        <div class="w-[1px] bg-[#e6eaee] h-full"></div>
+        <div class="w-[1px] bg-[#e6eaee] h-full"></div>
+        <div class="w-[1px] bg-[#e6eaee] h-full"></div>
+        <div class="w-[1px] bg-[#e6eaee] h-full"></div>
+        <div class="w-[1px] bg-[#e6eaee] h-full"></div>
+        <div class="w-[1px] bg-[#e6eaee] h-full"></div>
+        <div class="w-[1px] bg-[#e6eaee] h-full"></div>
       </div>
 
-      <div class="w-5 h-[82px] bg-[#746BDA] rounded-full relative z-10"></div>
+      <div class="w-5 h-[80px] bg-[#746BDA] rounded-full relative z-10"></div>
       <div class="w-5 h-[60px] bg-[#83B6E7] rounded-full relative z-10"></div>
-      <div class="w-5 h-[112px] bg-[#71D1AE] rounded-full relative z-10"></div>
-      <div class="w-5 h-[72px] bg-[#6DC6AF] rounded-full relative z-10"></div>
-      <div class="w-5 h-[108px] bg-[#7E74DE] rounded-full relative z-10"></div>
-      <div class="w-5 h-[66px] bg-[#71D1AE] rounded-full relative z-10"></div>
-      <div class="w-5 h-[112px] bg-[#83B6E7] rounded-full relative z-10"></div>
+      <div class="w-5 h-[110px] bg-[#71D1AE] rounded-full relative z-10"></div>
+      <div class="w-5 h-[70px] bg-[#6DC6AF] rounded-full relative z-10"></div>
+      <div class="w-5 h-[105px] bg-[#7E74DE] rounded-full relative z-10"></div>
+      <div class="w-5 h-[65px] bg-[#71D1AE] rounded-full relative z-10"></div>
+      <div class="w-5 h-[110px] bg-[#83B6E7] rounded-full relative z-10"></div>
 
     </div>
 
@@ -214,34 +218,33 @@
 
 </div>
 
-<!-- LIME ICON -->
-<div class="absolute left-[245px] bottom-[250px] w-[84px] h-[84px] rounded-[24px] bg-[#D8F14B] shadow-[0_12px_24px_rgba(180,220,50,.35)] flex items-center justify-center">
+<!-- lime icon -->
+<div class="absolute left-[255px] bottom-[255px] w-[84px] h-[84px] rounded-[24px] bg-[#D9F24B] shadow-[0_12px_24px_rgba(180,220,50,.35)] flex items-center justify-center">
 
   <svg width="42" height="42" viewBox="0 0 24 24" fill="none">
     <path d="M7 4H17L19 7L12 14L5 7L7 4Z"
-      stroke="#111"
-      stroke-width="1.8"
-      stroke-linejoin="round"/>
+          stroke="#111"
+          stroke-width="1.8"
+          stroke-linejoin="round"/>
     <circle cx="12" cy="18" r="4"
-      stroke="#111"
-      stroke-width="1.8"/>
+            stroke="#111"
+            stroke-width="1.8"/>
   </svg>
 
 </div>
 
-<!-- BLACK CREDIT CARD -->
-<div class="absolute left-[70px] top-[140px] w-[560px] h-[370px] rounded-[34px] credit-card panel-shadow overflow-hidden">
+<!-- black credit card -->
+<div class="absolute left-[80px] top-[150px] w-[560px] h-[370px] rounded-[34px] credit-card soft-shadow overflow-hidden">
 
-  <!-- curves -->
-  <div class="curve w-[500px] h-[500px] right-[-270px] top-[-120px]"></div>
-  <div class="curve w-[450px] h-[450px] right-[-245px] top-[-95px]"></div>
-  <div class="curve w-[400px] h-[400px] right-[-220px] top-[-68px]"></div>
-  <div class="curve w-[350px] h-[350px] right-[-195px] top-[-42px]"></div>
+  <!-- curve lines -->
+  <div class="curve w-[480px] h-[480px] right-[-260px] top-[-100px]"></div>
+  <div class="curve w-[430px] h-[430px] right-[-235px] top-[-78px]"></div>
+  <div class="curve w-[380px] h-[380px] right-[-208px] top-[-52px]"></div>
+  <div class="curve w-[330px] h-[330px] right-[-180px] top-[-28px]"></div>
 
-  <div class="relative z-10 h-full px-12 py-14 flex flex-col justify-between">
+  <div class="relative z-10 px-12 py-14 h-full flex flex-col justify-between">
 
-    <!-- top -->
-    <div class="flex justify-between">
+    <div class="flex justify-between items-start">
 
       <div>
 
@@ -255,14 +258,13 @@
 
       </div>
 
-      <div class="text-white/80 text-[26px] tracking-[4px] mt-3">
+      <div class="text-white/80 text-[26px] tracking-[4px] mt-4">
         **** **** **** 1234
       </div>
 
     </div>
 
-    <!-- bottom -->
-    <div class="flex items-end justify-between">
+    <div class="flex justify-between items-end">
 
       <div class="flex gap-16">
 
@@ -293,7 +295,7 @@
       </div>
 
       <!-- mastercard -->
-      <div class="relative w-[92px] h-[60px] mr-4 mb-2">
+      <div class="relative w-[90px] h-[60px] mr-4 mb-3">
         <div class="absolute left-0 top-0 w-[60px] h-[60px] rounded-full bg-[#b2b54b] opacity-70"></div>
         <div class="absolute right-0 top-0 w-[60px] h-[60px] rounded-full bg-[#d0d35d] opacity-70"></div>
       </div>
